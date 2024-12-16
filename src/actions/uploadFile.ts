@@ -24,6 +24,7 @@ export async function uploadFile(formData: FormData) {
         if (error) {
           reject(new Error(error.message))
         } else {
+        console.log(result)
           resolve(result)
         }
       }
